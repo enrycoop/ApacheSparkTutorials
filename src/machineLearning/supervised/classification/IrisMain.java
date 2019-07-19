@@ -100,7 +100,7 @@ public class IrisMain {
         model.setThreshold(bestThreshold);
         long fine = System.currentTimeMillis();
         long time=(fine-inizio);
-        System.out.println(time + " sec");
+        System.out.println("execution time: "+time + " millisec");
 
 
     }
