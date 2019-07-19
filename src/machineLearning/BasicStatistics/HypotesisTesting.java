@@ -1,4 +1,4 @@
-package MachineLearning.BasicStatistics;
+package machineLearning.BasicStatistics;
 import java.util.Arrays;
 import java.util.List;
 import org.apache.log4j.Level;

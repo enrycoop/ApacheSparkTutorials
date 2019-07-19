@@ -1,4 +1,4 @@
-package DataFrames;
+package dataframes;
 
 import java.util.ArrayList;
 import java.util.List;

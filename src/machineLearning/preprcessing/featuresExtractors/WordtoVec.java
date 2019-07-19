@@ -1,4 +1,4 @@
-package MachineLearning.ExtractingTransformingSelectingFeatures;
+package machineLearning.preprcessing.featuresExtractors;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -13,10 +13,7 @@ import org.apache.spark.ml.linalg.Vector;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.RowFactory;
-import org.apache.spark.sql.SparkSession;
 import org.apache.spark.sql.types.*;
-
-import javax.xml.crypto.Data;
 
 public class WordtoVec {
 

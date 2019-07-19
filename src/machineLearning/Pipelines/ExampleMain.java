@@ -1,4 +1,4 @@
-package MachineLearning.Pipelines;
+package machineLearning.Pipelines;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;

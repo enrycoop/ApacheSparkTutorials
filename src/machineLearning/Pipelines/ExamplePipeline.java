@@ -1,11 +1,10 @@
-package MachineLearning.Pipelines;
+package machineLearning.Pipelines;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.spark.sql.RowFactory;
 import org.apache.spark.sql.SparkSession;
 
-import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
 
