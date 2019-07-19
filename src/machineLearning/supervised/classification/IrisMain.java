@@ -28,6 +28,7 @@ import java.util.Scanner;
 
 public class IrisMain {
     public static void main(String[] args) throws FileNotFoundException {
+        long inizio = System.currentTimeMillis();
         Logger.getLogger("org").setLevel(Level.ERROR);
         Logger.getLogger("akka").setLevel(Level.ERROR);
 
@@ -97,7 +98,9 @@ public class IrisMain {
         double bestThreshold = fMeasure.where(fMeasure.col("F-Measure").equalTo(maxFMeasure))
                 .select("threshold").head().getDouble(0);
         model.setThreshold(bestThreshold);
-
+        long fine = System.currentTimeMillis();
+        long time=(fine-inizio);
+        System.out.println(time + " sec");
 
 
     }
