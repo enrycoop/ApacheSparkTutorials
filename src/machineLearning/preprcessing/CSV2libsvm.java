@@ -33,6 +33,6 @@ public class CSV2libsvm {
     }
 
     public static void main(String[] args) throws IOException {
-        CSV2libsvm.convert(",","resources/iris.data","resources/iris.txt");
+        CSV2libsvm.convert(",","resources/HTRU_2.csv","resources/HTRU_2.txt");
     }
 }
