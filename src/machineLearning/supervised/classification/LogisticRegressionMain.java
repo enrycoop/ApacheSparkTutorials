@@ -28,7 +28,7 @@ public class LogisticRegressionMain {
                 .getOrCreate();
 
         Dataset<Row> training = spark.read().format("libsvm")
-                .load("resources/sample_libsvm_data.txt");
+                .load("resources/multiclass.txt");
 
         LogisticRegression lr = new LogisticRegression()
                 .setMaxIter(10)
