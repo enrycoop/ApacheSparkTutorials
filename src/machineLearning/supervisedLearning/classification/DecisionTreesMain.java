@@ -1,4 +1,4 @@
-package machineLearning.supervised.classification;
+package machineLearning.supervisedLearning.classification;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -14,7 +14,7 @@ import org.apache.spark.ml.feature.*;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 
-public class RegressionTreesMain {
+public class DecisionTreesMain {
     public static void main(String[] args) {
         Logger.getLogger("org").setLevel(Level.ERROR);
         Logger.getLogger("akka").setLevel(Level.ERROR);

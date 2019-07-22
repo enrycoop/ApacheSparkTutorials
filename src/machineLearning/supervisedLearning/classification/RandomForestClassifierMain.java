@@ -1,4 +1,4 @@
-package machineLearning.supervised.classification;
+package machineLearning.supervisedLearning.classification;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -41,7 +41,8 @@ public class RandomForestClassifierMain {
                 .setMaxCategories(4)
                 .fit(data);
 
-        // Split the data into training and test sets (30% held out for testing)
+        // Split the data into training and test sets (30% held out for testing)// Load and parse the data file, converting it to a DataFrame.
+        //        Dataset<Row> data = spark.read().format("libsvm").load("resources/iris.txt");
         Dataset<Row>[] splits = data.randomSplit(new double[] {0.7, 0.3});
         Dataset<Row> trainingData = splits[0];
         Dataset<Row> testData = splits[1];

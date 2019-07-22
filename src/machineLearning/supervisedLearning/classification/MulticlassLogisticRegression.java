@@ -1,4 +1,4 @@
-package machineLearning.supervised.classification;
+package machineLearning.supervisedLearning.classification;
 import org.apache.spark.ml.classification.LogisticRegression;
 import org.apache.spark.ml.classification.LogisticRegressionModel;
 import org.apache.spark.ml.classification.LogisticRegressionTrainingSummary;
@@ -8,7 +8,6 @@ import org.apache.spark.sql.SparkSession;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.apache.spark.sql.SparkSession;
 
 public class MulticlassLogisticRegression {
     public static void main(String[] args) {

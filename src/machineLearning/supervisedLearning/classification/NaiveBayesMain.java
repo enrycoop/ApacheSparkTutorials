@@ -1,4 +1,4 @@
-package machineLearning.supervised.classification;
+package machineLearning.supervisedLearning.classification;
 
 /*
 Naive Bayes classifiers are a family of simple probabilistic, multiclass classifiers based on applying Bayes’ theorem

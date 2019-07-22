@@ -1,4 +1,4 @@
-package machineLearning.supervised.classification;
+package machineLearning.supervisedLearning.classification;
 
 /*
 Multilayer perceptron classifier (MLPC) is a classifier based on the feedforward artificial neural network.
