@@ -12,7 +12,7 @@
       <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/tukaani/xz/1.5/xz-1.5.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-hadoop2.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/apache/avro/avro-ipc/1.8.2/avro-ipc-1.8.2.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.9/commons-codec-1.9.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/com/twitter/chill_2.12/0.9.3/chill_2.12-0.9.3.jar!/" />
@@ -133,12 +133,12 @@
       <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/janino/janino/3.0.9/janino-3.0.9.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/janino/commons-compiler/3.0.9/commons-compiler-3.0.9.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/orc/orc-core/1.5.5/orc-core-1.5.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/orc/orc-core/1.5.5/orc-core-1.5.5-nohive.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/apache/orc/orc-shims/1.5.5/orc-shims-1.5.5.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/io/airlift/aircompressor/0.10/aircompressor-0.10.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/orc/orc-mapreduce/1.5.5/orc-mapreduce-1.5.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/orc/orc-mapreduce/1.5.5/orc-mapreduce-1.5.5-nohive.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/apache/parquet/parquet-column/1.10.1/parquet-column-1.10.1.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/apache/parquet/parquet-common/1.10.1/parquet-common-1.10.1.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/apache/parquet/parquet-encoding/1.10.1/parquet-encoding-1.10.1.jar!/" />

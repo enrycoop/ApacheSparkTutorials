@@ -1,10 +1,10 @@
 package dataframes;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
-import org.apache.log4j.Logger;
-import org.apache.log4j.Level;
 
 public class Main {
 
@@ -19,7 +19,7 @@ public class Main {
                 .master("local[*]")
                 .getOrCreate();
 
-        Dataset<Row> df = spark.read().json("people.json");
+        Dataset<Row> df = spark.read().json("resources/people.json");
 
         System.out.println("<---------- some query on json dataset ---------->");
 
