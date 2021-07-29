@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68dea485-2166-40ee-b8ce-7a06a5eaecdb" name="Default Changelist" comment="aggiornato alla versione 8 di java">
-      <change afterPath="$PROJECT_DIR$/resources/data.txt" afterDir="false" />
+    <list default="true" id="68dea485-2166-40ee-b8ce-7a06a5eaecdb" name="Default Changelist" comment="Modificata classe RDD">
+      <change afterPath="$PROJECT_DIR$/src/dataframes/ControllerLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/dataframe_sql_examples/dataframes/RDDs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dataframe_sql_examples/dataframes/RDDs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dataframes/RDDs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataframes/RDDs.java" afterDir="false" />
@@ -14,6 +14,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -98,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627487747564</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Modificata classe RDD">
+      <created>1627553714411</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627553714411</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +129,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aggiornato alla versione 8 di java" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiornato alla versione 8 di java" />
+    <MESSAGE value="Modificata classe RDD, aggiunta data.txt" />
+    <MESSAGE value="Modificata classe RDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificata classe RDD" />
   </component>
 </project>
