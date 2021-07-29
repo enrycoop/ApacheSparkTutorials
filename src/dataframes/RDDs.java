@@ -2,9 +2,15 @@ package dataframes;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
+import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.MapFunction;
 import org.apache.spark.sql.*;
+import org.apache.spark.storage.StorageLevel;
+
+import java.util.Arrays;
+import java.util.List;
 
 /*
  * Questo metodo di conversione si può impiegare soltanto
@@ -15,11 +21,30 @@ public class RDDs {
         Logger.getLogger("org").setLevel(Level.ERROR);
         Logger.getLogger("akka").setLevel(Level.ERROR);
 
-        SparkSession spark = SparkSession.builder()
-                .appName("Dataframe example")
-                .master("local[*]")
-                .getOrCreate();
+        SparkConf spark = new SparkConf().setAppName("Dataframe example")
+                .setMaster("local[*]");
 
+        JavaSparkContext sc = new JavaSparkContext(spark);
+
+
+        JavaRDD<String> lines = sc.textFile("resources/data.txt");
+        JavaRDD<Integer> lineLengths = lines.map(s -> {
+            Integer total = 0;
+            for(String number : s.split(",")) {
+                try {
+                    total += Integer.parseInt(number);
+                    System.out.print(Integer.parseInt(number)+ " ");
+                }catch(NumberFormatException e){
+                    System.err.println("\nWARN: impossible parse this character: \""+number+ "\"");
+                }
+            }
+            System.out.println("Total line: "+total);
+            return total;
+        });
+        lineLengths.persist(StorageLevel.MEMORY_ONLY());
+        int totalLength = lineLengths.reduce((a, b) -> a + b);
+
+        /*
         //creating an RDD of persons from a text file
 
         JavaRDD<Person> peopleRDD = spark.read()
@@ -56,6 +81,6 @@ public class RDDs {
                 stringEncoder
         );
         teenagersByFieldName.show();
-
+        */
     }
 }
